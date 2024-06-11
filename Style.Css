@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("path/to/fontfile.woff2") format("woff2"),
+    url("path/to/fontfile.woff") format("woff");
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
+  background-color: black;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("Images/5.jpg");
+  background-size: cover;
+  background-position: inherit;
+  z-index: -1;
+  opacity: 0.5;
+}
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-family: Impact;
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 1px;
+  padding: 1px;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+  flex-grow: 1;
+  order: 10;
+  display: block;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+a:hover {
+  color: black;
+}
+
+.logo {
+  background-image: url("Images/Bwc.png");
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 300px; /* Width of your logo */
+  height: 300px; /* Height of your logo */
+  white-space: nowrap;
+  position: absolute;
+  margin-bottom: 100px;
+  top: -90px;
+  left: -110px;
+}
+
+.cb {
+  font-family: Impact;
+  color: yellowgreen;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main nav {
+  margin-top: 28px;
+  margin-right: 80px;
+}
