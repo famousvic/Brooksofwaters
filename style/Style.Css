@@ -72,7 +72,7 @@ a:hover {
 }
 
 .logo {
-  background-image: url("Images/Bwc.png");
+  background-image: url("../Images/Bwc.png");
   background-size: 110px;
   background-repeat: no-repeat;
   background-position: right;
